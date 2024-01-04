@@ -64,6 +64,14 @@ if [ -z "${SRC}" ]; then
 fi
 
 # Initialize the helper.
+function blob_fixup() {
+    case "${1}" in
+        vendor/lib64/libmot_chi_desktop_helper.so)
+            ${PATCHELF} --add-needed "libshims_camera.so" "${2}"
+            ;;
+    esac
+}
+
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"

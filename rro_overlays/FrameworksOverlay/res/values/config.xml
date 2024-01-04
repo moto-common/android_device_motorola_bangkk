@@ -41,4 +41,11 @@
 
     <!-- The padding of the rounded corners -->
     <dimen name="rounded_corner_content_padding">9dp</dimen>
+
+    <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
+    <integer-array name="config_udfps_sensor_props" translatable="false" >
+        <item>540</item> <!-- sensorLocationX -->
+        <item>2168</item> <!-- sensorLocationY -->
+        <item>91</item> <!-- sensorRadius -->
+    </integer-array>
 </resources>

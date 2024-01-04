@@ -18,31 +18,28 @@ include device/motorola/sm4350-common/PlatformConfig.mk
 
 # Modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD := \
-    tcpc_rt1711h.ko \
-    tcpc_sgm7220.ko \
     adsp_loader_dlkm.ko \
     apr_dlkm.ko \
-    aw882xx_acf.ko \
+    aw87xxx_dlkm.ko \
+    awinic_sar.ko \
     bolero_cdc_dlkm.ko \
     camera.ko \
     ldo_vibrator_mmi.ko \
-    leds-indicator-pwm.ko \
-    leds_lm3697.ko \
     machine_dlkm.ko \
     mbhc_dlkm.ko \
     mmi_sys_temp.ko \
     native_dlkm.ko \
-    nfc_i2c.ko \
-    nova_0flash_mmi.ko \
+    sec_nfc.ko \
     pinctrl_lpi_dlkm.ko \
     platform_dlkm.ko \
     q6_dlkm.ko \
     q6_notifier_dlkm.ko \
     q6_pdr_dlkm.ko \
     qca_cld3_wlan.ko \
-    rbs_fps_mmi.ko \
+    touchscreen_mmi.ko \
+    focaltech_v3_mmi.ko \
+    goodix_brl_mmi.ko \
     rx_macro_dlkm.ko \
-    silead_fps_mmi.ko \
     snd_event_dlkm.ko \
     stub_dlkm.ko \
     swr_ctrl_dlkm.ko \
@@ -55,15 +52,10 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD := \
     wcd938x_slave_dlkm.ko \
     wcd9xxx_dlkm.ko \
     wcd_core_dlkm.ko \
-    wl2866d.ko \
     wlan.ko \
     wsa881x_analog_dlkm.ko \
-    rt_pd_manager.ko
-
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := \
-    tcpc_sgm7220.ko \
-    tcpc_rt1711h.ko \
-    rt_pd_manager.ko
+    mmi-smbcharger-iio.ko \
+    mmi_parallel_charger_iio.ko
 
 # Partition information
 BOARD_SUPER_PARTITION_SIZE := 9831448576

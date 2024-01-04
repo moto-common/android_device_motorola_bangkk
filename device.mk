@@ -25,6 +25,10 @@ PRODUCT_PROPERTY_OVERRIDES := \
 # Brightness
 SOONG_CONFIG_qtidisplay_brightness := true
 
+# Camera
+PRODUCT_PACKAGES += \
+    libshims_camera
+
 # Device characteristics
 DEVICE_CHARACTERISTICS += hfr
 
@@ -32,20 +36,25 @@ DEVICE_CHARACTERISTICS += hfr
 DEVICE_PATH := device/motorola/bangkk/rootdir
 
 # Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.3-service.bangkk
+
 TARGET_USES_EGISTEC_FINGERPRINT := true
-TARGET_USES_SILEAD_FINGERPRINT := true
+TARGET_USES_FINGERPRINT_V2_1 := false
 
 # Model
 PRODUCT_MODEL := moto g stylus 5g 2022
 
 # Modules
 BOOT_KERNEL_MODULES := \
-    tcpc_sgm7220.ko \
-    tcpc_rt1711h.ko \
-    rt_pd_manager.ko
+    mmi-smbcharger-iio.ko \
+    mmi_parallel_charger_iio.ko \
+    touchscreen_mmi.ko \
+    goodix_brl_mmi.ko \
+    focaltech_v3.ko
 
 # NFC
-TARGET_USES_PN5XX_PN8X_NFC := true
+TARGET_USES_SEC_NFC := true
 
 # Power
 TARGET_IS_BLAIR := true

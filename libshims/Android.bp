@@ -1,0 +1,7 @@
+cc_library_shared {
+    name: "libshims_camera",
+    srcs: ["CameraShim.cpp"],
+    cflags: ["-Wno-unused-parameter"],
+
+    vendor: true,
+}
