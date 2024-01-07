@@ -43,7 +43,7 @@ TARGET_USES_EGISTEC_FINGERPRINT := true
 TARGET_USES_FINGERPRINT_V2_1 := false
 
 # Model
-PRODUCT_MODEL := moto g stylus 5g 2022
+PRODUCT_MODEL := moto g(84)
 
 # Modules
 BOOT_KERNEL_MODULES := \
