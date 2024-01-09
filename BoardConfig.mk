@@ -69,3 +69,6 @@ BOARD_MOT_DYNAMIC_PARTITIONS_PARTITION_LIST := \
     system \
     product \
     vendor
+
+# SEPolicy
+BOARD_VENDOR_SEPOLICY_DIRS += device/motorola/bangkk/sepolicy
