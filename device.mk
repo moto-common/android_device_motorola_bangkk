@@ -59,6 +59,10 @@ TARGET_USES_SEC_NFC := true
 # Power
 TARGET_IS_BLAIR := true
 
+# Sensors
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.sensors.mot_tap=false
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/sm4350-common/platform.mk)
 

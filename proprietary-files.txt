@@ -376,7 +376,6 @@ vendor/etc/qdcm_calib_data_mipi_moto_vid_tm_u8_1080p_dsc_655.xml
 
 # Sensors
 vendor/etc/sensors/config/mot_camgest.json
-vendor/etc/sensors/config/mot_tap.json
 vendor/etc/sensors/config/sns_amd.json
 vendor/etc/sensors/config/sns_amd_sw_disabled.json
 vendor/etc/sensors/config/sns_amd_sw_enabled.json
@@ -436,7 +435,6 @@ vendor/etc/sensors/proto/mot_offbody.proto
 vendor/etc/sensors/proto/mot_probe.proto
 vendor/etc/sensors/proto/mot_proxcal.proto
 vendor/etc/sensors/proto/mot_stowed.proto
-vendor/etc/sensors/proto/mot_tap.proto
 vendor/etc/sensors/proto/mot_vsync.proto
 vendor/etc/sensors/proto/nanopb.proto
 vendor/etc/sensors/proto/sns_accel.proto
