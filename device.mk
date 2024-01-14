@@ -48,10 +48,10 @@ PRODUCT_MODEL := moto g(84)
 # Modules
 BOOT_KERNEL_MODULES := \
     mmi-smbcharger-iio.ko \
-    mmi_parallel_charger_iio.ko \
     touchscreen_mmi.ko \
     goodix_brl_mmi.ko \
-    focaltech_v3.ko
+    focaltech_v3.ko \
+    mmi_parallel_charger_iio.ko
 
 # NFC
 TARGET_USES_SEC_NFC := true

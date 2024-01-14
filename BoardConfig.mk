@@ -18,6 +18,7 @@ include device/motorola/sm4350-common/PlatformConfig.mk
 
 # Modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD := \
+    mmi-smbcharger-iio.ko \
     adsp_loader_dlkm.ko \
     apr_dlkm.ko \
     aw87xxx_dlkm.ko \
@@ -54,7 +55,6 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD := \
     wcd_core_dlkm.ko \
     wlan.ko \
     wsa881x_analog_dlkm.ko \
-    mmi-smbcharger-iio.ko \
     mmi_parallel_charger_iio.ko
 
 # Partition information
