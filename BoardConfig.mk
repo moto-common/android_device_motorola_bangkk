@@ -38,7 +38,7 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD := \
     q6_pdr_dlkm.ko \
     qca_cld3_wlan.ko \
     touchscreen_mmi.ko \
-    focaltech_v3_mmi.ko \
+    focaltech_v3.ko \
     goodix_brl_mmi.ko \
     rx_macro_dlkm.ko \
     snd_event_dlkm.ko \
