@@ -36,7 +36,7 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD := \
     q6_dlkm.ko \
     q6_notifier_dlkm.ko \
     q6_pdr_dlkm.ko \
-    qca_cld3_wlan.ko \
+    wlan.ko \
     touchscreen_mmi.ko \
     focaltech_v3.ko \
     goodix_brl_mmi.ko \
