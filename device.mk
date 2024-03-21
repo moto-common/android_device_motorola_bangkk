@@ -30,7 +30,7 @@ PRODUCT_PACKAGES += \
     libshims_camera
 
 # Device characteristics
-DEVICE_CHARACTERISTICS += hfr
+DEVICE_CHARACTERISTICS += hfr erofs
 
 # Device path
 DEVICE_PATH := device/motorola/bangkk/rootdir
